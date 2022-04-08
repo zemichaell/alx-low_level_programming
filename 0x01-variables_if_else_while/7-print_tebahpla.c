@@ -9,7 +9,7 @@ int main(void)
 {
 char reverse_alphabet
 
-for  (revere_alphabet = 'z'; reverse_alphabet = 'a'; reverse_alphabet++)
+for  (revere_alphabet = 122; reverse_alphabet >= 97; reverse_alphabet++)
 {
 putchar (reverse_alphabet);
 
