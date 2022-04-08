@@ -2,18 +2,18 @@
 /**
  * main - Entry point
  *
- *Return: Always 0 (Success/correct)
+ * Return: Always 0 (Success/correct)
  */
 
 int main(void)
 
 {
-int num;
-for (num = 0; num <= 9; num++)
+int x;
+for (x = 0; x <= 9; x++)
 {
-putchar("%num", num);
+putchar(x);
 }
-putchar("\n);
+putchar("\n");
 
 return (0);
 
