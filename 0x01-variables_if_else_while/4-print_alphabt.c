@@ -7,17 +7,17 @@
 
 int main(void)
 {
-char letter;
+char alphabet;
 
-for (letter = 'a'; letter <= 'z'; letter++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-if (letter == 'q')
+if (alphabet == 'q')
 continue;
 
-else if (letter == 'e')
+else if (alphabet == 'e')
 continue;
 
-putchar(letter);
+putchar(alphabet);
 }
 
 putchar('\n');
