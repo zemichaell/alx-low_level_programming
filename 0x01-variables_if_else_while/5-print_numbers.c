@@ -6,9 +6,9 @@
  */
 
 int main(void)
-
+int digit;
 {
-for (int digit = 0; digit <= 9; digit++)
+for (digit = 0; digit <= 9; digit++)
 {
 printf("%ddigit", digit);
 }
