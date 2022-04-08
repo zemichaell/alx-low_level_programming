@@ -7,11 +7,11 @@
 
 int main(void)
 {
-char reverse
+char alphabet;
 
-for (reverse = 122; reverse >= 97; reverse--)
+for (alphabet = 122; alphabet >= 97; alphabet--)
 {
-putchar (reverse);
+putchar (alphabet);
 
 }
 putchar ('\n');
