@@ -7,13 +7,13 @@
 
 int main(void)
 
-int y;
+int x;
 {
-for (y = 0; y <= 9; y++)
+for (x = 0; x <= 9; x++)
 {
-printf("%y", y);
+printf("%x", x);
 }
-printf('\n');
+printf("\n");
 
 return (0);
 
