@@ -7,7 +7,7 @@
 int main(void)
 {
 int num1 = 48;
-int a= 0;
+int a = 0;
 int b;
 int combination = 44;
 while (a <= 99)
@@ -19,7 +19,7 @@ putchar((a / 10) + num1);
 putchar((a % 10) + num1);
 putchar(32);
 putchar((b / 10) + num1);
-putchar((a % 10) + num1);
+putchar((b % 10) + num1);
 
 if (a != 98 || b != 99)
 {
