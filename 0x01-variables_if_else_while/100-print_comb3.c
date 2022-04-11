@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * 
+ *
  * Return: Always 0 (Success/correct)
  */
-
 int main(void)
 {
 int num1 = 48;
@@ -27,5 +26,6 @@ num2 += 1;
 num1 += 1;
 }
 putchar('\n');
+
 return (0);
 }
