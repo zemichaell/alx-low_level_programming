@@ -6,7 +6,10 @@
  */
 int main(void)
 {
-int num1 = 48, a= 0, b, combination = 44;
+int num1 = 48;
+int a= 0;
+int b;
+int combination = 44;
 while (a <= 99)
 {
 b = a + 1;
