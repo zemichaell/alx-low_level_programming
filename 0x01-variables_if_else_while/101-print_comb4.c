@@ -7,7 +7,7 @@
 int main(void)
 {
 int num1 = 48;
-int num2 = num3, combination = 44;
+int num2, num3, combination = 44;
 while (num1 <= 57)
 {
 num2 = num1 + 1;
@@ -16,10 +16,10 @@ while (num2 <= 57)
 num3 = num2 + 1;
 while (num3 <= 57)
 {
-putchar(num1'\n', num2'\n', num3);
-if (num1 != 55 || num2 !56 || num3 != 57)
+putchar(num1, num2, num3);
+if (num1 != 55 || num2 != 56 || num3 != 57)
 {
-putchar(combination'\n', 32);
+putchar(combination, 32);
 }
 num3 += 1;
 }
