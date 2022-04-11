@@ -21,7 +21,7 @@ putchar(32);
 putchar((b / 10) + num1);
 putchar((a % 10) + num1);
 
-if (a !=98 || b !=99 )
+if (a !=98 || b !=99)
 {
 putchar(combination);
 putchar(32);
