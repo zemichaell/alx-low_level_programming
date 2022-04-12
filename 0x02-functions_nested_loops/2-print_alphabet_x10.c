@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - functions that print 10 times the alphabet in lowercase.
+ * print_alphabet_x10 - functions that print 10 times the alphabet in lowercase.
  *
  * Return: Always 0.
  */
@@ -15,4 +15,5 @@ for (alphabet = 'a'; alphabet = 'z'; alphabet++)
 _putchar(alphabet);
 }
 _putchar('\n');
+}
 }
