@@ -2,7 +2,7 @@
 /**
  * prit_alphabet - functions that print the alphabet in lowercase followed by a new line.
   */
-void print_alphabet(void)i
+void print_alphabet(void)
 {
 char i;
 
