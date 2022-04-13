@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * times_table - pirint the 9 times table
  * Return: Always 0.
  */
