@@ -13,5 +13,5 @@ last_digit *= -1;
 
 _putchar(last_digit + 'e');
 
-return (last_digit):
+return (last_digit);
 }
