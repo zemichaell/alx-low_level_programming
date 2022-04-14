@@ -18,7 +18,7 @@ for (col = 0; col <= n; col++)
 mult = (row * col);
 if (mult < 10)
 {
-if (cool != 0)
+if (col != 0)
 {
 _putchar(' ');
 _putchar(' ');
