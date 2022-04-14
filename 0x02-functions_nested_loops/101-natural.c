@@ -7,7 +7,7 @@
 int main(void)
 {
 	int multiple = 0;
-	inr sum = 0;
+	int sum = 0;
 
 	while(multiple < 1024)
 	{
