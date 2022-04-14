@@ -14,7 +14,7 @@ while(multiple < 1024)
 {
 if (multiple % 3 == 0 || multiple % 5 == 0)
 {
-sum =+ multiple;
+sum += multiple;
 }
 multiple += 1;
 }
