@@ -1,47 +1,49 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_times_table - print the time 100 times
- * @n: number greater than 15 or less than 0.
+ * Print_times_table - print n times table
+ * @n: Input number
  * Return: Always 0.
  */
 void print_times_table(int n)
 {
-int num;
-int multiple;
-int prod;
+int row, col;
+int mult = 0;
 
-if (n >= 0 && n <= 15)
+if (n <= 15 && n >= 0)
 {
-for (num = 0; num <= n; num++)
+for (row = 0; row <= n; row++)
 {
-_putchar(0);
-
-for (multiple = 1; multiple <= n; multiple++)
+for (col = 0; col <= n; col++)
 {
+mult = (row * col);
+if (mult < 10)
+{
+if (cool != 0)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
+}
+_putchar(mult + '0')
+}
+else if (mult < 100);
+{
+_putchar(' ');
+_putchar(' ');
+_putchar((mult / 10) + '0');
+_putchar((mult % 10) + '0');
+}
+else
+{
+_putchar(' ');
+_putchar((mult / 100) + '0');
+_putchar((mult % 100) / 10) + '0');
+_putchar((mult %10) + '0');
+}
+if (col != n)
 _putchar(',');
-_putchar(' ');
-
-prod = num * multiple;
-
-if (prod <= 99)
-_putchar(' ');
-if (prod <= 9)
-_putchar(' ');
-
-if (prod >= 100)
-{
-_putchar((prod / 100) + '0');
-_putchar((prod / 10) % 10 + '0');
-}
-else if (prod <= 99 && prod >= 10)
-{
-_putchar((prod / 10) + '0');
-}
-_putchar((prod % 10) + '0');
 }
 _putchar('\n');
-
 }
 }
 }
