@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * Print_times_table - print n times table
- * @n: Input number
+ * @n: any input integer number
  * Return: Always 0.
  */
 void print_times_table(int n)
@@ -38,7 +38,7 @@ else
 _putchar(' ');
 _putchar((mult / 100) + '0');
 _putchar(((mult % 100) / 10) + '0');
-_putchar((mult %10) + '0');
+_putchar((mult % 10) + '0');
 }
 if (col != n)
 _putchar(',');
