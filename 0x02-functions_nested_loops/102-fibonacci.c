@@ -9,7 +9,7 @@ int main(void)
 {
 	long i = 0;
 	long j = 1;
-	long n = 0;
+	int n = 0;
 	long fibonacci;
 	
 	while (n < 50)
