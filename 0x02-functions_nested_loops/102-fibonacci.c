@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j = 1;
-	int n = 0;
-	int fibonacci;
+	long i = 0;
+	long j = 1;
+	long n = 0;
+	long fibonacci;
 	
 	while (n < 50)
 	{
