@@ -18,12 +18,14 @@ int main(void)
 		if (n != 49)
 			printf("%ld, ", fibonacci);
 		else
-		{
+	
 			printf("%ld\n", fibonacci);
 			i = j;
 			j = fibonacci;
 			n += 1;
-		}
-		return (0);
+	}
+	
+			return (0);
+	
 	}
 
