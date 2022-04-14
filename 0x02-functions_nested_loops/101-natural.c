@@ -20,4 +20,5 @@ multiple += 1;
 }
 printf("%d\n", sum);
 return (0);
+
 }
