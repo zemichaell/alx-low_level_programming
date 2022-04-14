@@ -24,7 +24,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
-_putchar(mult + '0')
+_putchar(mult + '0');
 }
 else if (mult < 100)
 {
