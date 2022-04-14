@@ -20,6 +20,7 @@ break;
 if ((sum % 2) == 0)
 total += sum;
 
+num1 = num2;
 num2 = sum;
 }
 printf("%.0f\n", total);
