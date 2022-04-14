@@ -37,7 +37,7 @@ else
 {
 _putchar(' ');
 _putchar((mult / 100) + '0');
-_putchar((mult % 100) / 10) + '0');
+_putchar(((mult % 100) / 10) + '0');
 _putchar((mult %10) + '0');
 }
 if (col != n)
