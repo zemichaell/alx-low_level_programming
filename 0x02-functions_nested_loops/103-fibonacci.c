@@ -22,7 +22,7 @@ total += sum;
 
 num2 = sum;
 }
-printf("%of\n", total);
+printf("%.of\n", total);
 
 return (0);
 }
