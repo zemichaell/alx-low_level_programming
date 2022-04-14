@@ -26,7 +26,7 @@ _putchar(' ');
 }
 _putchar(mult + '0')
 }
-else if (mult < 100);
+else if (mult < 100)
 {
 _putchar(' ');
 _putchar(' ');
