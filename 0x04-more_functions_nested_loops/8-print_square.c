@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_square - print the squer 
- * @size: size -  Variable
+ * print_square - print the squer using # character 
+ * @size: size of the squer
  * Return: Always 0.
  */
 void print_square(int size)
@@ -24,4 +24,5 @@ else
 {
 _putchar('\n');
 }
+
 }
