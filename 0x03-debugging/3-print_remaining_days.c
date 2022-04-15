@@ -6,6 +6,7 @@
  * @month: month of the year
  * @day: day of the year
  * @year: year
+ * Return: void
  */
 void print_remaining_days(int month, int day, int year)
 {
