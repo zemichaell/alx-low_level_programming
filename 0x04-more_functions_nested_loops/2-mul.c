@@ -2,7 +2,7 @@
 /**
  * multiplication - multiplies two integer numbers
  * @a: any firt input number
- * @y: any second input number
+ * @b: any second input number
  * Return: result of multiplies
  */
 
