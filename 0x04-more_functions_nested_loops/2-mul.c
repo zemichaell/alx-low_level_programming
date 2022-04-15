@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * multiplication - multiplies two integer numbers
+ * mul - multiplies two integer numbers
  * @a: any firt input number
  * @b: any second input number
  * Return: result of multiplies
