@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * puts2 - function that print character of string 
  * @str: pointer to an int that will be changed
