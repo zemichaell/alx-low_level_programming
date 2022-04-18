@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * puts2 - print skip one number
- * @str: checked
+ * puts2 - print character of string 
+ * @str: pointer to an int that will be changed
  *
  * Return: Always 0
  */
+
 void puts2(char *str)
 {
-int i = 0;
-
-while (*(str + i) != '\n')
+int i;
+for (i = 0; str[a] != '\0'; i++)
 {
-_putchar(str[i]);
-i += 2;
+if (a % 2 == 0)
+_putchar (str[i]);
 }
-_putchar('\n');
 
+_putchar ('\n');
 }
