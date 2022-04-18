@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * puts - print skip one number
+ * puts2 - print skip one number
  * @str: checked
  *
  * Return: Always 0
  */
-void puts(char *str)
+void puts2(char *str)
 {
 int i = 0;
 
