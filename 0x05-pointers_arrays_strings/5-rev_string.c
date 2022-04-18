@@ -22,3 +22,13 @@ count = length;
 start_c = s;
 end_c = s;
 
+for (i = 0; i < count -1; i++)
+{
+c = *end_c;
+*end_c = *start_c;
+*start_c = c;
+
+start_c++
+end_c--
+}
+}
