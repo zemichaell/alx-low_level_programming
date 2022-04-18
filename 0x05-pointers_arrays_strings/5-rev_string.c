@@ -8,20 +8,17 @@
  */
 void rev_string(char *s)
 {
-int i = 0;
-int n =0;
-char rev;
+char *start_c, *end_c, c;
+int i, count;
+int length = 0;
 
-while (*(s + i) != '\0')
-i += 1;
-i -= 1;
-
-while (rev < i)
+for (i = 0; s[i]; i++)
 {
-rev = s[i];
-s[i] = s[rev];
-s[rev] = rev;
-n++;
-i--;
+length++;
 }
-}
+
+count = length;
+
+start_c = s;
+end_c = s;
+
