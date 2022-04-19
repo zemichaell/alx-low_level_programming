@@ -20,7 +20,7 @@ int _atoi(char *s)
 unsigned int num, i;
 int sign;
 
-sign = i;
+sign = 1;
 num = 0;
 
 for (i = 0; s[i] != '\0'; i++)
