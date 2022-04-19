@@ -36,6 +36,6 @@ else if (s[i] == '-')
 {
 sign *= -1;
 }
-
+}
 return (num *sign);
 }
