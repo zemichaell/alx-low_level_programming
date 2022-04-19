@@ -39,4 +39,3 @@ sign *= -1;
 
 return (num *sign);
 }
-}
