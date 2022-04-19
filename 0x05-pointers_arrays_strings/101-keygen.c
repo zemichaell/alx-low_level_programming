@@ -15,7 +15,7 @@ int r, n, i;
 n = 0;
 i = 0;
 
-srand(time(MULL));
+srand(time(NULL));
 while (n < 2645)
 {
 r =rand() % 122;
