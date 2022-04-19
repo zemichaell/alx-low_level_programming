@@ -3,15 +3,33 @@
 #include <time.h>
 #include <stdlib.h>
 /**
+ * main - random password generator for 101 crackme
  *
+ * Return: Always 0.
  */
 
-int main(void)
-{
-int num;
+int main(void){
+char a[10];
+int r, n, i;
 
-srand(time(0));
-num = rand();
-printf("%i\n", num);
+n = 0;
+i = 0;
+
+srand(time(MULL));
+while (n < 2645)
+{
+r =rand() % 122;
+if (r > 32)
+{
+a[i++] = r;
+n += r;
+}
+}
+a[i++] = (2772 - a);
+a[i] = '\0';
+printf("%s", a);
+
+
 return (0);
 }
+
