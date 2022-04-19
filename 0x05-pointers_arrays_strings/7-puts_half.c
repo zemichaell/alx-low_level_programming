@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
  */
+
 void puts_half(char *str)
 {
 int i;
@@ -13,7 +14,7 @@ int last;
 i = 0;
 while (str[i] != '\0')
 {
-i++
+i++;
 }
 
 last = (i + 1) / 2;
