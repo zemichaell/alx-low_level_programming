@@ -9,8 +9,7 @@
 
 char *_strch(char *s, char c)
 {
-int x = 0;
-int y;
+int x = 0, y;
 
 while (s[x])
 {
@@ -19,12 +18,12 @@ x++
 
 for (y = 0; y <= x; y++)
 {
-if (c ==s[x])
+if (c == s[x])
 {
 s += y;
 return (s);
 }
 }
 
-return ('\n');
+return ('\0');
 }
