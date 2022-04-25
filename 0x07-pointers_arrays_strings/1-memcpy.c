@@ -1,12 +1,13 @@
-#include "main.h"
-/**
- * _memcpy - copies n bytes from memory area ponted to src by dest.
- * @dest: the memory area to copy src.
- * @scr: a source buffer to copy character s from.
- * @n: number of bytes to copy from src.
- * Return: print the value of dest
- */
+#include "holberton.h"
 
+/**
+  * _memcpy - copy memory area
+  * @dest: dest memory area
+  * @src: source memory area
+  * @n: bytes from memory area to copy
+  *
+  * Return: memory area replaced
+  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int x;
