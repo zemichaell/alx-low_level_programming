@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_chessboard - Print the chessboard
- * @a: array of pieces
- *
- * Return: 0.
- */
+  * print_chessboard - Print the chessboard
+  * @a: array of pieces
+  *
+  * Return: Nothing.
+  */
 void print_chessboard(char (*a)[8])
 {
-	int a, c;
+	int b, c;
 
 	for (b = 0; b < 8; b++)
 	{
@@ -18,6 +18,5 @@ void print_chessboard(char (*a)[8])
 		}
 
 		_putchar('\n');
-
 	}
 }
