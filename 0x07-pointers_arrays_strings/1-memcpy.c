@@ -7,7 +7,7 @@
  * Return: print the value of dest
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+void *_memcpy(void *dest, const void *src, size_t n)
 {
 unsigned int y;
 unsigned char *dis = dist;
