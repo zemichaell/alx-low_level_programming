@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _memset - the function that fills fist n bytes of memory area pointed to by @s
  * @s: memory area pointed by @s.
@@ -7,16 +6,17 @@
  * @n: the first function to be fill.
  *
  * Return: a pointer to the memory area @s.
+ * Return: the memory area filled
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int x;
+	unsigned int x;
 
-for (x = 0; x < n; x++)
-{
-s[x] = b;
-}
+	for (x = 0; x < n; x++)
+	{
+		s[x] = b;
+	}
 
-return (s);
+	return (s);
 }
