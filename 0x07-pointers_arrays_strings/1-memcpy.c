@@ -7,14 +7,14 @@
  * Return: print the value of dest
  */
 
-void *_memcpy(void *dest, const void *src, size_t n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int index;
-unsigned char *distination = dist;
-const unsigned char *source = src;
+	unsigned int x;
 
-for (index = 0; index < n; index++)
-des[index] = source[index];
+	for (x = 0; x < n; x++)
+	{
+		dest[x] = src[x];
+	}
 
-return (dest);
-}
+	return (dest);
+}i
