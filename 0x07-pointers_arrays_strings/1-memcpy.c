@@ -9,12 +9,12 @@
 
 void *_memcpy(void *dest, const void *src, size_t n)
 {
-unsigned int y;
-unsigned char *dis = dist;
+unsigned int index;
+unsigned char *distination = dist;
 const unsigned char *source = src;
 
-for (y = 0; y < n; y++)
-des[y] = source[y];
+for (index = 0; index < n; index++)
+des[index] = source[index];
 
 return (dest);
 }
