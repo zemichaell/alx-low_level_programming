@@ -30,6 +30,7 @@ int getNumSqr(int num, int i)
 	if (num == (i * i))
 		return (i);
 	else if (num > (i * i))
-		else
-		       	return (-1);
+		return (getNumSqr(num, i + 1));
+	else
+		return (-1);
 }
