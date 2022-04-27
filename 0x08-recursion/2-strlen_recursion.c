@@ -1,10 +1,13 @@
 #include "main.h"
- /**
-  * _print_rev_recursion - the function that prints a string in reverse
-  * @s: string to receive
-  *
-  * Return: Always 0.
-  */
+
+/**
+ * _strlen_recursion - the function that returns the length of a string
+ *
+ * @s: string to receive
+ *
+ * Return: Always 0.
+ */
+
 
 int _strlen_recursion(char *s)
 {
