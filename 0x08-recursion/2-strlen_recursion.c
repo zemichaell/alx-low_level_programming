@@ -5,13 +5,12 @@
    *
    * Return: Always 0.
    */
-void _print_rev_recursion(char *s)
+
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
-	{
-		print_rev_recursion(s + 1);
-		_putchar(*s);
-	}
-	else
-		return;
+		return (0);
+	s++;
+	return (1 + _strlen_recursion(s));
+
 }
