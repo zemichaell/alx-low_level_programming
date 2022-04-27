@@ -4,7 +4,7 @@
  * @s1: string 1
  * @s2: string 2
  *
- * eturn: 1 if strings ==, else 0
+ * Return: 1 if strings ==, else 0
  */
 
 int wildcmp(char *s1, char *s2)
