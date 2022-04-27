@@ -1,10 +1,13 @@
 #include "main.h"
+
 /**
- * _puts_recursion - the function that can prints a string
- * @s: Recieved string
+ * _puts_recursion -  the function that can prints a string
+ *
+ * @s: string to receive
  *
  * Return: Always 0.
  */
+
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
@@ -14,5 +17,5 @@ void _puts_recursion(char *s)
 	}
 	_putchar(*s);
 	s++;
-	-puts_recursion(s);
+	_puts_recursion(s);
 }
