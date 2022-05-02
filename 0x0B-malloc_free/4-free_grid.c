@@ -1,6 +1,7 @@
 #include<stdlib.h>
+
 /**
- * ree_grid - function that frees a 2 dimensional grid previously created
+ * ree_grid - function that frees a 2 dimensional grid created
  * @grid: array to free
  * @height: height of the array
  *
