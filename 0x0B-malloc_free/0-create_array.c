@@ -6,7 +6,6 @@
  * @c: input char
  * Return: char
  */
-
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
