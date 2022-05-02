@@ -1,11 +1,11 @@
 #include<stdlib.h>
 
 /**
- * ree_grid - function that frees a 2 dimensional grid created
+ * free_grid - function that frees a 2 dimensional grid created
  * @grid: array to free
  * @height: height of the array
  *
- * Return: Always 0.
+ * Return: none
  */
 
 void free_grid(int **grid, int height)
