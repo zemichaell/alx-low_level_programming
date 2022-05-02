@@ -2,16 +2,18 @@
 #include "main.h"
 
 /**
- * **strtow - function that splits a string into words.
- * @str : pointer
- *
- * Return: Always 0.
- */
+* **strtow - function that splits a string into words.
+* @str : pointer
+*
+* Return: Char
+*/
 
 char **strtow(char *str)
 {
 	char **d;
-	int i, j = 0, con = 0;
+	int i;
+	int j = 0;
+	int con = 0;
 
 	if (str == NULL)
 		return (NULL);
