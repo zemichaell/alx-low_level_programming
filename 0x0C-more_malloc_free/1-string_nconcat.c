@@ -7,11 +7,9 @@
  * @s1: input one
  * @s2: input two
  * @n: s2's number of bytes
- * Return: Always 0
+ * Return: 0
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-
 {
 	char *arr;
 	unsigned int i, j, co, co_2;
@@ -20,6 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 	}
@@ -30,6 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n < j)
 		j = n;
+
 	j += i;
 	arr = malloc(sizeof(char *) * (j + 1));
 
@@ -47,4 +47,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	arr[co] = '\0';
 	return (arr);
 }
-
