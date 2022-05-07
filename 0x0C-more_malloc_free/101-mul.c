@@ -3,10 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _isNum - check if is a number
- * @num: string to check
- * Return: 1 is numm, 0 not num
- */
+* _isNum - check if is a number
+*@num: string to check
+*Return: 1 is numm, 0 not num
+*/
 int _isNum(char *num)
 {
 	int i;
@@ -16,10 +16,11 @@ int _isNum(char *num)
 		if (num[i] < '0' || num[i] > '9')
 			return (0);
 	}
-	return (0);
+	return (1);
 }
 
 /**
+<<<<<<< HEAD
  * *_memset - copies a character to the firstn characters of the string pointed
  * @s: original string
  * @b: value to remplace
@@ -27,6 +28,14 @@ int _isNum(char *num)
  * Return: s (string modify)
  */
 
+=======
+* *_memset - copies a character to the firstn characters of the string pointed
+*@s: original string
+*@b: value to remplace
+*@n: number of bytes
+*Return: s (string modify)
+*/
+>>>>>>> 8ae98b14940518628f6d6a01c95c2fd1f7d4d155
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
@@ -35,12 +44,20 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	return (s);
 }
+
 /**
+<<<<<<< HEAD
  * _strlen - returns the lenght of a string
  * @s: poiter of character
  * Return: the length of a string
  */
 
+=======
+* _strlen - returns the lenght of a string
+*@s: poiter of character
+*Return: the length of a string
+*/
+>>>>>>> 8ae98b14940518628f6d6a01c95c2fd1f7d4d155
 int _strlen(char *s)
 {
 	int len;
@@ -52,12 +69,20 @@ int _strlen(char *s)
 }
 
 /**
+<<<<<<< HEAD
  * main - multiple 2 positive numbers
  * @argc: argument counter
  * @argv: number to multiply
  * Return: 0 (success)
  */
 
+=======
+* main - multiple 2 positive numbers
+*@argc: argument counter
+*@argv: number to multiply
+*Return: 0 (success)
+*/
+>>>>>>> 8ae98b14940518628f6d6a01c95c2fd1f7d4d155
 int main(int argc, char *argv[])
 {
 	int length, c, prod, i, j, l1, l2;
@@ -89,7 +114,7 @@ int main(int argc, char *argv[])
 
 
 	if (res[0] == 0)
-		i = 0;
+		i = 1;
 	else
 		i = 0;
 	for (; i < length; i++)
