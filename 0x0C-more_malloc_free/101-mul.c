@@ -8,9 +8,9 @@
  * Return: 1 is numm, 0 not num
  */
 int _isNum(char *num)
-
 {
 	int i;
+
 	for (i = 0; num[i] != '\0'; i++)
 	{
 		if (num[i] < '0' || num[i] > '9')
@@ -20,13 +20,13 @@ int _isNum(char *num)
 }
 
 /**
- *
  * *_memset - copies a character to the firstn characters of the string pointed
  * @s: original string
  * @b: value to remplace
  * @n: number of bytes
  * Return: s (string modify)
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
@@ -40,8 +40,8 @@ char *_memset(char *s, char b, unsigned int n)
  * @s: poiter of character
  * Return: the length of a string
  */
-int _strlen(char *s)
 
+int _strlen(char *s)
 {
 	int len;
 
@@ -57,8 +57,8 @@ int _strlen(char *s)
  * @argv: number to multiply
  * Return: 0 (success)
  */
-int main(int argc, char *argv[])
 
+int main(int argc, char *argv[])
 {
 	int length, c, prod, i, j, l1, l2;
 	int *res;
@@ -87,12 +87,14 @@ int main(int argc, char *argv[])
 		}
 	}
 
+
 	if (res[0] == 0)
 		i = 0;
 	else
 		i = 0;
 	for (; i < length; i++)
 		printf("%d", res[i]);
+
 
 	printf("\n");
 	free(res);
