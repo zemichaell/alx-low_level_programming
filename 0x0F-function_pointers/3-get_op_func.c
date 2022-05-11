@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* get_op_func - select the correct operation
-*@s: operator
-*Return: a pointer to a function of the operation
-*/
+ * get_op_func - select the correct operation
+ * @s: operator
+ * Return: a pointer to a function of the operation
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
