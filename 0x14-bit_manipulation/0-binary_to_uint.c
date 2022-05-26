@@ -1,65 +1,29 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _pow_recursion - function that returns the value of x
- * raised to the power of y
- * @x: base number
- * @y: pow number
- * Return: int
- */
-
-int _pow_recursion(int x, int y)
-{
-	if (y < 0)
-		return (-1);
-	if (y == 0)
-		return (1);
-	return (x * _pow_recursion(x, y - 1));
-}
-
-/**
- * _strlen - function that returns the length of a string.
+ * binary_to_uint - converts a binary number to an unsigned int.
+ * @b: pointer to a string containing a binary number
  *
- * @s: pointer to an string
- * Return: int
+ * Return: unsigned int with decimal value of binsry number, or 0 if error
  */
-
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i += 1;
-	}
-	return (i);
-}
-
-/**
- * binary_to_uint - function that converts a binary number to an unsigned int
- * @b: pointing to a string of 0 and 1 chars
- * Return: the converted number, or 0 if
- * there is one or more chars in the string b that is not 0 or 1
- * b is NULL
- */
-
 unsigned int binary_to_uint(const char *b)
 {
-	int len, exp = 0;
-	unsigned int res = 0;
+	int i;
+	unsigned int num;
 
-	if (b == NULL)
+	num = 0;
+	if (!b)
 		return (0);
-	len = _strlen(b);
-	while (len-- && len >= 0)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[len] == '1')
-			res += _pow_recursion(2, exp);
-		else if (b[len] != '0')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		exp++;
 	}
-	return (res);
+	for (i = 0; b[i] != '\0'; i++)
+	{
+		num <<= 1;
+		if (b[i] == '1')
+			num += 1;
+	}
+	return (num);
 }
