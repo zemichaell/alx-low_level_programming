@@ -1,48 +1,83 @@
+#include <stdlib.h>
 #include "lists.h"
 /**
- * insert_nodeint_at_index - inserts a new node at a given position.
- * * @head: pointer to the list.
- * @idx: position to add the node.
- * @n: data for the new node.
- * Return: the address of the new node, or NULL if it failed
+ * insert_nodeint_at_index - insert node at given pos
+ * @head: head node
+ * @idx: index pos
+ * @n: new node data
+ * Return: address of new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *aux_node = *head;
-	listint_t *new_node;
-	unsigned int index;
-	unsigned int cont = 0;
+	listint_t *node, *prev;
 
-	/* create node */
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-		return (NULL);
-	new_node->n = n;
+	if (!head)
+		return (0);
 
-	/* border case for insert at the beginning */
 	if (idx == 0)
 	{
-		new_node->next = *head;
-		*head = new_node;
-		return (*head);
+		node = add_nodeint(head, n);
+		return (node);
 	}
 
-	/* search of position to insert */
-	index = idx - 1;
-	while (aux_node && cont != index)
+	node = malloc(sizeof(listint_t));
+	if (!node)
+		return (0);
+	node->n = n;
+
+	prev = get_nodeint_at_index(*head, idx - 1);
+	if (!prev)
 	{
-		cont++;
-		aux_node = aux_node->next;
+		free(node);
+		return (0);
 	}
 
-	/* general case */
-	if (cont == index && aux_node)
+	node->next = prev->next;
+	prev->next = node;
+	return (node);
+}
+/**
+ * get_nodeint_at_index - get node at index
+ * @head: head node
+ * @index: index node
+ * Return: address of index node
+ */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	unsigned int i = 0;
+	listint_t *node;
+
+	node = head;
+
+	if (!node)
+		return (0);
+
+	while (node)
 	{
-		new_node->next = aux_node->next;
-		aux_node->next = new_node;
-		return (new_node);
+		if (index == i)
+			return (node);
+		i++;
+		node = node->next;
 	}
+	return (0);
+}
+/**
+ * add_nodeint - add not at start
+ * Return: pointer to node
+ * @head: head node
+ * @n: new node data
+ */
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *node;
 
-	free(new_node);
-	return (NULL);
+	if (!head)
+		return (0);
+	node = malloc(sizeof(listint_t));
+	if (!node)
+		return (0);
+	node->n = n;
+	node->next = *head;
+	*head = node;
+	return (node);
 }
