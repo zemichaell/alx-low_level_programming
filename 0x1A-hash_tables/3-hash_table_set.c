@@ -7,7 +7,6 @@
  *
  * Return: pointer to the new node.
  */
-
 hash_node_t *set_pair(const char *key, const char *value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
@@ -23,7 +22,6 @@ hash_node_t *set_pair(const char *key, const char *value)
 	strcpy(node->key, key);
 	strcpy(node->value, value);
 	return (node);
-
 }
 
 /**
@@ -36,7 +34,7 @@ hash_node_t *set_pair(const char *key, const char *value)
  * Return: the node, or NULL if failed.
  */
 int set_pair_only(hash_table_t *ht, const char *key,
-		const char *value, unsigned long int index)
+		  const char *value, unsigned long int index)
 {
 	hash_node_t *node = set_pair(key, value);
 
@@ -92,5 +90,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	return (0);
 }
-
-			
